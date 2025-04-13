@@ -107,10 +107,18 @@
       </p>
       <div class="row">
         <div class="col-md-6">
-          <video controls width="100%" preload="auto">
-            <source src="images/v1.mp4" type="video/mp4">
-            Tu navegador no soporta la etiqueta de video.
-          </video>
+          <video id="miVideo" controls>
+    <source src="v1.mp4" type="video/mp4">
+    Tu navegador no soporta el video.
+  </video>
+
+  <script>
+    // Cargar el video completamente al abrir la página
+    window.onload = function() {
+      const video = document.getElementById('miVideo');
+      video.load(); // Carga el video
+    };
+  </script>
         </div>
         <div class="col-md-6">
           <video controls width="100%">
