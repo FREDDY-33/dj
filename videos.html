@@ -106,35 +106,20 @@
         Galería de videos
       </p>
       <div class="row">
-        <div class="col-md-6">
-          <video id="miVideo" controls>
-    <source src="v1.mp4" type="video/mp4">
-    Tu navegador no soporta el video.
-  </video>
-
-  <script>
-    // Cargar el video completamente al abrir la página
-    window.onload = function() {
-      const video = document.getElementById('miVideo');
-      video.load(); // Carga el video
-    };
-  </script>
-        </div>
-        <div class="col-md-6">
-          <video controls width="100%">
-            <source src="videos/video2.mp4" type="video/mp4">
+          <video controls width="100%" preload="none">
+            <source src="videos/video1.mp4" type="video/mp4">
             Tu navegador no soporta la etiqueta de video.
           </video>
         </div>
         <div class="col-md-6">
-          <video controls width="100%">
-            <source src="videos/video3.mp4" type="video/mp4">
+          <video controls width="100%" preload="auto">
+            <source src="videos/video1.mp4" type="video/mp4">
             Tu navegador no soporta la etiqueta de video.
           </video>
         </div>
         <div class="col-md-6">
-          <video controls width="100%">
-            <source src="videos/video4.mp4" type="video/mp4">
+          <video controls width="100%" preload="metada">
+            <source src="videos/video1.mp4" type="video/mp4">
             Tu navegador no soporta la etiqueta de video.
           </video>
         </div>
